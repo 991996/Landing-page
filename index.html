@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome-free-7.0.1-web/css/all.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Ted Martins</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="absolute top-0 left-0 w-full z-4 flex justify-center pb-5 pt-5 text-white transition duration-300"
+    >
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black/50 z-5"
+      ></div>
+      <!-- End Overlay -->
+      <div
+        class="font-primary-font flex justify-between items-center w-full lg:w-3/4 pl-4"
+      >
+        <a href="#" class="text-2xl font-extrabold">Ted Martins</a>
+        <div class="flex justify-end items-center gap-5">
+          <nav class="hidden md:block">
+            <ul class="flex gap-5 justify-end font-bold">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button
+            class="hidden sm:block cursor-pointer text-white font-bold p-3 pl-8 pr-8 bg-linear-to-r from-pink to-orange-pink rounded-tr-2xl rounded-bl-2xl hover:from-orange-pink hover:to-rajah transition duration-300"
+          >
+            Get A Quote
+          </button>
+          <!-- open menu button -->
+          <div class="mr-10 md:hidden">
+            <button class="cursor-pointer" id="nav-open-button">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu start -->
+      <div
+        id="mobile-menu"
+        class="-left-[60%] fixed md:hidden top-0 w-[60%] z-10 h-screen pl-4 pr-4 bg-white text-navy-blue transition-all duration-300 ease-in-out"
+      >
+        <div class="flex flex-col gap-10">
+          <div class="font-primary-font flex justify-between w-full pt-10">
+            <a href="#" class="text-4xl font-extrabold">Ted Martins</a>
+            <div class="flex justify-end items-center gap-5">
+              <!-- close menu button -->
+              <div class="mr-10 md:hidden">
+                <button class="cursor-pointer" id="nav-close-button">
+                  <i class="fa-solid fa-close text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul class="flex flex-col gap-5 justify-end font-bold">
+              <li><a href="#home">Home</a></li>
+              <hr class="text-gray-300" />
+              <li><a href="#about">About</a></li>
+              <hr class="text-gray-300" />
+              <li><a href="#services">Services</a></li>
+              <hr class="text-gray-300" />
+              <li><a href="#features">Features</a></li>
+              <hr class="text-gray-300" />
+              <li><a href="#blog">Blog</a></li>
+              <hr class="text-gray-300" />
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile menu End -->
+    </header>
+
+    <!-- home page Section -->
+    <section
+      id="home"
+      class="font-primary-font hero w-full flex justify-center h-dvh"
+    >
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center lg:w-3/4 p-4 gap-8"
+      >
+        <!-- Left Text div -->
+        <div class="flex flex-col gap-4 text-white">
+          <h6 class="text-orange text-lg font-bold">
+            We Are Product Designer From UK
+          </h6>
+          <h1 class="text-4xl font-bold">
+            We Design Interfaces That Users Love
+          </h1>
+          <p class="tracking-normal">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus.
+          </p>
+          <!-- Learn more button -->
+          <div>
+            <button
+              class="cursor-pointer text-white font-bold p-3 pl-8 pr-8 bg-linear-to-r from-pink to-orange-pink rounded-tr-2xl rounded-bl-2xl hover:from-orange-pink hover:to-rajah transition duration-300"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+        <!-- End Left Text div -->
+        <!-- right image div -->
+        <div class="flex justify-center items-center">
+          <img
+            class="w-2/3 lg:w-full self-center"
+            src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="flex justify-center pt-24 lg:pt-8">
+      <div
+        class="flex flex-col md:flex-row md:w-7/8 lg:w-3/4 md:justify-between gap-5 items-center"
+      >
+        <!-- image -->
+        <img
+          src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true"
+          loading="lazy"
+          alt="about banner"
+          class="w-[70%] md:w-1/2 banner-animation"
+        />
+        <!-- Text Div -->
+        <div class="flex flex-col gap-5 w-full sm:w-[70%] md:w-1/2 pl-4">
+          <h1 class="text-navy-blue text-3xl md:text-4xl lg:text-5xl font-bold">
+            Why Our Agency
+          </h1>
+          <div
+            class="h-1.5 bg-linear-to-r from-pink to-chrome-yellow rounded-2xl w-1/3"
+          ></div>
+          <p class="text-gray-800 pt-5 pb-3">
+            In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna.
+            Nulla vel maximus risus. Donec volutpat metus lacinia risus
+            accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit
+            amet magna tempus hendrerit ut a odio. Praesent rhoncus commodo
+            tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis
+            ante, vehicula condimentum arcu.
+          </p>
+          <!-- Squers div -->
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center text-navy-blue gap-5"
+          >
+            <div
+              class="rounded-2xl shadow-xl bg-white flex flex-col justify-center items-center w-full lg:w-1/3 pt-5 pb-5 gap-2"
+            >
+              <h3 class="font-bold text-4xl">9875</h3>
+              <p>Satisfied Clients</p>
+            </div>
+            <div
+              class="rounded-2xl shadow-xl bg-white flex flex-col justify-center items-center w-full lg:w-1/3 pt-5 pb-5 gap-2"
+            >
+              <h3 class="font-bold text-4xl">7894</h3>
+              <p>Project Lunched</p>
+            </div>
+            <div
+              class="rounded-2xl shadow-xl bg-white flex flex-col justify-center items-center w-full lg:w-1/3 pt-5 pb-5 gap-2"
+            >
+              <h3 class="font-bold text-4xl">65</h3>
+              <p>Years Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Speciallization Section -->
+    <section id="services" class="w-full mx-auto pt-24">
+      <!-- container -->
+      <div
+        class="flex flex-col gap-8 justify-center items-center sm:w-[80%] md:w-[90%] xl:w-[80%] px-4 mx-auto"
+      >
+        <!-- Title -->
+        <div class="flex flex-col gap-8">
+          <h1 class="text-navy-blue text-3xl md:text-4xl lg:text-5xl font-bold">
+            Our Speciallization
+          </h1>
+          <div
+            class="h-1.5 bg-linear-to-r from-pink to-chrome-yellow rounded-2xl w-[70%] self-center"
+          ></div>
+        </div>
+        <!-- Cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-center"
+        >
+          <!-- card 1 -->
+          <div
+            class="bg-white shadow-xl flex flex-col gap-4 justify-center items-center p-12 rounded-2xl"
+          >
+            <!-- Icon -->
+            <div
+              class="relative h-42 w-42 text-dark-pink hover:text-white duration-300"
+            >
+              <img
+                src="./src/img/service-banner-pattern.png"
+                class="bg-light-pink hover:bg-dark-pink absolute w-full duration-300"
+              />
+              <svg
+                class="w-16 absolute top-12 left-12"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12.2429 6.18353L8.55917 8.27415C7.72801 8.74586 7.31243 8.98172 7.20411 9.38603C7.09579 9.79034 7.33779 10.2024 7.82179 11.0264L8.41749 12.0407C8.88853 12.8427 9.12405 13.2437 9.51996 13.3497C9.91586 13.4558 10.3203 13.2263 11.1292 12.7672L14.8646 10.6472M7.05634 9.72257L3.4236 11.7843C2.56736 12.2702 2.13923 12.5132 2.02681 12.9256C1.91438 13.3381 2.16156 13.7589 2.65591 14.6006C3.15026 15.4423 3.39744 15.8631 3.81702 15.9736C4.2366 16.0842 4.66472 15.8412 5.52096 15.3552L9.1537 13.2935M21.3441 5.18488L20.2954 3.39939C19.8011 2.55771 19.5539 2.13687 19.1343 2.02635C18.7147 1.91584 18.2866 2.15881 17.4304 2.64476L13.7467 4.73538C12.9155 5.20709 12.4999 5.44294 12.3916 5.84725C12.2833 6.25157 12.5253 6.6636 13.0093 7.48766L14.1293 9.39465C14.6004 10.1966 14.8359 10.5976 15.2318 10.7037C15.6277 10.8098 16.0322 10.5802 16.841 10.1212L20.5764 8.00122C21.4326 7.51527 21.8608 7.2723 21.9732 6.85985C22.0856 6.44741 21.8384 6.02657 21.3441 5.18488Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 12.5L16 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 12.5L8 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h3 class="text-navy-blue text-2xl font-bold">
+              Strategy & Research
+            </h3>
+            <p class="text-gray-800">
+              Mauris ut felis malesuada eros varius tristique a at orci. Nulla
+              vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum,
+              et porttitor.
+            </p>
+            <!-- arrow button -->
+            <div
+              class="h-12 w-12 border border-dark-pink rounded-full cursor-pointer flex justify-center items-center text-dark-pink hover:text-white hover:bg-dark-pink duration-300"
+            >
+              <svg
+                class="w-[50%]"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-white shadow-xl flex flex-col gap-4 justify-center items-center p-12 rounded-2xl"
+          >
+            <!-- Icon -->
+            <div
+              class="relative h-42 w-42 text-dark-pink hover:text-white duration-300"
+            >
+              <img
+                src="./src/img/service-banner-pattern.png"
+                class="bg-light-pink hover:bg-dark-pink absolute w-full duration-300"
+              />
+              <svg
+                class="w-14 absolute top-12 left-14"
+                viewBox="-0.5 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  sketch:type="MSPage"
+                >
+                  <g
+                    id="Icon-Set"
+                    sketch:type="MSLayerGroup"
+                    transform="translate(-568.000000, -463.000000)"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M597,481 L570,481 L570,467 C570,465.896 570.896,465 572,465 L595,465 C596.104,465 597,465.896 597,467 L597,481 L597,481 Z M597,485 C597,486.104 596.104,487 595,487 L572,487 C570.896,487 570,486.104 570,485 L570,483 L597,483 L597,485 L597,485 Z M582,489 L586,489 L586,493 L582,493 L582,489 Z M595,463 L572,463 C569.791,463 568,464.791 568,467 L568,485 C568,487.209 569.791,489 572,489 L580,489 L580,493 L578,493 C577.447,493 577,493.448 577,494 C577,494.553 577.447,495 578,495 L590,495 C590.553,495 591,494.553 591,494 C591,493.448 590.553,493 590,493 L588,493 L588,489 L595,489 C597.209,489 599,487.209 599,485 L599,467 C599,464.791 597.209,463 595,463 L595,463 Z"
+                      id="desktop"
+                      sketch:type="MSShapeGroup"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3 class="text-navy-blue text-2xl font-bold">Web Development</h3>
+            <p class="text-gray-800">
+              Mauris ut felis malesuada eros varius tristique a at orci. Nulla
+              vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum,
+              et porttitor.
+            </p>
+            <!-- arrow button -->
+            <div
+              class="h-12 w-12 border border-dark-pink rounded-full cursor-pointer flex justify-center items-center text-dark-pink hover:text-white hover:bg-dark-pink duration-300"
+            >
+              <svg
+                class="w-[50%]"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="bg-white shadow-xl flex flex-col gap-4 justify-center items-center p-12 rounded-2xl"
+          >
+            <!-- Icon -->
+            <div
+              class="relative h-42 w-42 text-dark-pink hover:text-white duration-300"
+            >
+              <img
+                src="./src/img/service-banner-pattern.png"
+                class="bg-light-pink hover:bg-dark-pink absolute w-full duration-300"
+              />
+              <svg
+                class="w-16 absolute top-12 left-12"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21" />
+                <path d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21" />
+                <path d="M3 12H21" />
+                <path d="M19.5 7.5H4.5" />
+                <path d="M19.5 16.5H4.5" />
+              </svg>
+            </div>
+            <h3 class="text-navy-blue text-2xl font-bold">Web Solution</h3>
+            <p class="text-gray-800">
+              Mauris ut felis malesuada eros varius tristique a at orci. Nulla
+              vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum,
+              et porttitor.
+            </p>
+            <!-- arrow button -->
+            <div
+              class="h-12 w-12 border border-dark-pink rounded-full cursor-pointer flex justify-center items-center text-dark-pink hover:text-white hover:bg-dark-pink duration-300"
+            >
+              <svg
+                class="w-[50%]"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="w-full mx-auto pt-24">
+      <!-- container -->
+      <div
+        class="flex flex-col gap-8 justify-center items-center sm:w-[80%] md:w-[90%] xl:w-[80%] px-4 mx-auto"
+      >
+        <!-- Title -->
+        <div class="flex flex-col gap-6">
+          <h1 class="text-navy-blue text-2xl md:text-4xl lg:text-5xl font-bold">
+            Our Features
+          </h1>
+          <div
+            class="h-1.5 bg-linear-to-r from-pink to-chrome-yellow rounded-2xl w-[70%] self-center"
+          ></div>
+        </div>
+        <!-- sub container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-1">
+          <!-- 1 col -->
+          <div class="flex flex-col md:flex-row lg:flex-col gap-12">
+            <!-- feature -->
+            <div class="flex gap-4">
+              <!-- icon -->
+              <div
+                class="w-20 h-20 [background-image:var(--gradient-3)] rounded-full flex justify-center items-center shrink-0"
+              >
+                <img src="./src/img/bulb-svgrepo-com.svg" class="w-[50%]" />
+              </div>
+              <!-- text -->
+              <div class="flex flex-col gap-2">
+                <h3 class="text-navy-blue text-2xl font-bold">
+                  Idea & Analysis
+                </h3>
+                <p class="text-gray-800">
+                  Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                  eros sit amet ipsum venenatis.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <!-- icon -->
+              <div
+                class="w-20 h-20 [background-image:var(--gradient-3)] rounded-full flex justify-center items-center shrink-0"
+              >
+                <img
+                  src="./src/img/color-palette-svgrepo-com.svg"
+                  class="w-[50%]"
+                />
+              </div>
+              <!-- text -->
+              <div class="flex flex-col gap-2">
+                <h3 class="text-navy-blue text-2xl font-bold">Designing</h3>
+                <p class="text-gray-800">
+                  Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                  eros sit amet ipsum venenatis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 col -->
+          <div class="mx-auto py-5">
+            <img src="./src/img/feautres-banner.png" />
+          </div>
+          <!-- 3 col -->
+          <div class="flex flex-col md:flex-row lg:flex-col gap-12">
+            <!-- feature -->
+            <div class="flex gap-4">
+              <!-- icon -->
+              <div
+                class="w-20 h-20 [background-image:var(--gradient-3)] rounded-full flex justify-center items-center shrink-0"
+              >
+                <img
+                  src="./src/img/code-slash-svgrepo-com.svg"
+                  class="w-[50%]"
+                />
+              </div>
+              <!-- text -->
+              <div class="flex flex-col gap-2">
+                <h3 class="text-navy-blue text-2xl font-bold">Development</h3>
+                <p class="text-gray-800">
+                  Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                  eros sit amet ipsum venenatis.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <!-- icon -->
+              <div
+                class="w-20 h-20 [background-image:var(--gradient-3)] rounded-full flex justify-center items-center shrink-0"
+              >
+                <img src="./src/img/rocket-svgrepo-com.svg" class="w-[50%]" />
+              </div>
+              <!-- text -->
+              <div class="flex flex-col gap-2">
+                <h3 class="text-navy-blue text-2xl font-bold">
+                  Testing & Lunching
+                </h3>
+                <p class="text-gray-800">
+                  Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                  eros sit amet ipsum venenatis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section id="blog" class="w-full mx-auto pt-24">
+      <!-- container -->
+      <div
+        class="flex flex-col gap-8 justify-center items-center sm:w-[90%] xl:w-[80%] px-4 mx-auto"
+      >
+        <!-- Title -->
+        <div class="flex flex-col gap-6">
+          <h1 class="text-navy-blue text-2xl md:text-4xl lg:text-5xl font-bold">
+            Our Blog & News
+          </h1>
+          <div
+            class="h-1.5 bg-linear-to-r from-pink to-chrome-yellow rounded-2xl w-[70%] self-center"
+          ></div>
+        </div>
+        <!-- sub container -->
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+          <!-- Blog 1 -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 bg-white shadow-2xl rounded-2xl p-6"
+          >
+            <div class="cursor-pointer h-full">
+              <img
+                src="./src/img/blog-1.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <h3
+                class="text-navy-blue font-bold text-lg cursor-pointer hover:text-dark-pink"
+              >
+                Vestibulum massa arcu, consectetu pellentesque scelerisque.
+              </h3>
+
+              <p class="text-gray-800">
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa
+                et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <!-- icons -->
+              <div class="flex justify-between mt-auto">
+                <div class="flex gap-2">
+                  <img src="./src/img/time-svgrepo-com.svg" class="w-5" />
+                  <p class="text-gray-800 font-[500]">7 December, 2023</p>
+                </div>
+                <div class="flex gap-3">
+                  <div class="flex gap-1">
+                    <img
+                      src="./src/img/comment-1-svgrepo-com.svg"
+                      class="w-5"
+                    />
+                    <p>15</p>
+                  </div>
+                  <img src="./src/img/share-svgrepo-com.svg" class="w-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 2 -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 bg-white shadow-2xl rounded-2xl p-6"
+          >
+            <div class="cursor-pointer h-full">
+              <img
+                src="./src/img/blog-2.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <h3
+                class="text-navy-blue font-bold text-lg cursor-pointer hover:text-dark-pink"
+              >
+                Quisque egestas iaculis felis eget placerat ut pulvinar mi.
+              </h3>
+
+              <p class="text-gray-800">
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa
+                et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <!-- icons -->
+              <div class="flex justify-between mt-auto">
+                <div class="flex gap-2">
+                  <img src="./src/img/time-svgrepo-com.svg" class="w-5" />
+                  <p class="text-gray-800 font-[500]">3 August, 2023</p>
+                </div>
+                <div class="flex gap-3">
+                  <div class="flex gap-1">
+                    <img
+                      src="./src/img/comment-1-svgrepo-com.svg"
+                      class="w-5"
+                    />
+                    <p>15</p>
+                  </div>
+                  <img src="./src/img/share-svgrepo-com.svg" class="w-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 3 -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 bg-white shadow-2xl rounded-2xl p-6"
+          >
+            <div class="cursor-pointer h-full">
+              <img
+                src="./src/img/blog-3.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <h3
+                class="text-navy-blue font-bold text-lg cursor-pointer hover:text-dark-pink"
+              >
+                Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
+              </h3>
+
+              <p class="text-gray-800">
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa
+                et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <!-- icons -->
+              <div class="flex justify-between mt-auto">
+                <div class="flex gap-2">
+                  <img src="./src/img/time-svgrepo-com.svg" class="w-5" />
+                  <p class="text-gray-800 font-[500]">29 April, 2023</p>
+                </div>
+                <div class="flex gap-3">
+                  <div class="flex gap-1">
+                    <img
+                      src="./src/img/comment-1-svgrepo-com.svg"
+                      class="w-5"
+                    />
+                    <p>15</p>
+                  </div>
+                  <img src="./src/img/share-svgrepo-com.svg" class="w-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog 4 -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 bg-white shadow-2xl rounded-2xl p-6"
+          >
+            <div class="cursor-pointer h-full">
+              <img
+                src="./src/img/blog-4.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-4 h-full">
+              <h3
+                class="text-navy-blue font-bold text-lg cursor-pointer hover:text-dark-pink"
+              >
+                Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+              </h3>
+
+              <p class="text-gray-800">
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa
+                et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <!-- icons -->
+              <div class="flex justify-between mt-auto">
+                <div class="flex gap-2">
+                  <img src="./src/img/time-svgrepo-com.svg" class="w-5" />
+                  <p class="text-gray-800 font-[500]">16 March, 2023</p>
+                </div>
+                <div class="flex gap-3">
+                  <div class="flex gap-1">
+                    <img
+                      src="./src/img/comment-1-svgrepo-com.svg"
+                      class="w-5"
+                    />
+                    <p>15</p>
+                  </div>
+                  <img src="./src/img/share-svgrepo-com.svg" class="w-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="w-full mt-24 text-white [background-image:var(--gradient-1)] relative"
+    >
+      <img
+        src="./src/img/footer-bg.png"
+        class="w-full h-full absolute top-0 left-0 z-[1] object-cover"
+      />
+      <div
+        class="relative z-[2] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[350px_repeat(2,1fr)] lg:grid-cols-[350px_repeat(3,1fr)] xl:grid-cols-[350px_repeat(4,1fr)] gap-5 py-10 w-full px-4 lg:w-[80%] mx-auto"
+      >
+        <!-- Company logo -->
+        <div class="flex flex-col gap-4">
+          <a href="#" class="text-3xl font-extrabold">Ted Martins</a>
+          <p class="text-[17px]">
+            Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed.
+            Aliquam magna augue, malesuada ut feugiat eget, cursus eget felis.
+          </p>
+          <!-- Social media -->
+          <div class="flex gap-4 mt-4">
+            <!-- Facebook -->
+            <a
+              href="#"
+              class="h-8 w-8 bg-white hover:[background-image:var(--gradient-2)] rounded-full text-dark-pink hover:text-white flex justify-center items-center"
+            >
+              <svg
+                class="w-[60%]"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>facebook</title>
+                <path
+                  d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"
+                ></path>
+              </svg>
+            </a>
+            <!-- instagram -->
+            <a
+              href="#"
+              class="h-8 w-8 bg-white hover:[background-image:var(--gradient-2)] rounded-full text-dark-pink hover:text-white flex justify-center items-center"
+            >
+              <svg
+                class="w-[60%]"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>instagram</title>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-340.000000, -7439.000000)"
+                    fill="currentColor"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                        id="instagram-[#167]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <!-- twitter -->
+            <a
+              href="#"
+              class="h-8 w-8 bg-white hover:[background-image:var(--gradient-2)] rounded-full text-dark-pink hover:text-white flex justify-center items-center"
+            >
+              <svg
+                class="w-[60%]"
+                viewBox="0 -2 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>twitter</title>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-60.000000, -7521.000000)"
+                    fill="currentColor"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                        id="twitter-[#154]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!--  links -->
+        <div class="flex flex-col gap-4">
+          <label class="text-2xl font-bold">Our links</label>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="" class="hover:underline">About us</a></li>
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="" class="hover:underline">Team</a></li>
+            <li><a href="#blog" class="hover:underline">Blog</a></li>
+          </ul>
+        </div>
+        <!--  Our Services -->
+        <div class="flex flex-col gap-4">
+          <label class="text-2xl font-bold">Our Services</label>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href="#services" class="hover:underline"
+                >Strategy & Research</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:underline">Web Development</a>
+            </li>
+            <li>
+              <a href="#services" class="hover:underline">Web Solution</a>
+            </li>
+            <li>
+              <a href="#services" class="hover:underline">Digital Marketing</a>
+            </li>
+            <li><a href="#services" class="hover:underline">App Design</a></li>
+          </ul>
+        </div>
+        <!--  Other links -->
+        <div class="flex flex-col gap-4">
+          <label class="text-2xl font-bold">Other links</label>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#home" class="hover:underline">FAQ</a></li>
+            <li><a href="" class="hover:underline">Portfolio</a></li>
+            <li><a href="" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#blog" class="hover:underline">Support</a></li>
+          </ul>
+        </div>
+        <!-- Contact us -->
+        <div class="flex flex-col gap-4">
+          <label class="text-2xl font-bold">Contact us</label>
+          <div class="flex gap-2 justify-start items-center">
+            <!-- icon -->
+            <div
+              class="w-10 h-10 [background-image:var(--gradient-2)] rounded-full flex justify-center items-center shrink-0"
+            >
+              <img src="./src/img/phone-svgrepo-com.svg" class="w-[50%]" />
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-1">
+              <a href="" class="hover:underline">+248-421-4313</a>
+              <a href="" class="hover:underline">+248-687-1365</a>
+            </div>
+          </div>
+          <div class="flex gap-2 justify-start items-center">
+            <!-- icon -->
+            <div
+              class="w-10 h-10 [background-image:var(--gradient-2)] rounded-full flex justify-center items-center shrink-0"
+            >
+              <img src="./src/img/email-svgrepo-com.svg" class="w-[50%]" />
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-1">
+              <a href="" class="hover:underline">contato@tedmartins.com</a>
+              <a href="" class="hover:underline">help@tedmartins.com</a>
+            </div>
+          </div>
+          <div class="flex gap-2 justify-start items-center">
+            <!-- icon -->
+            <div
+              class="w-10 h-10 [background-image:var(--gradient-2)] rounded-full flex justify-center items-center shrink-0"
+            >
+              <img
+                src="./src/img/location-pin-svgrepo-com.svg"
+                class="w-[50%]"
+              />
+            </div>
+            <!-- text -->
+            <p>Pontiac, Michigan, United States of America</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute w-full py-4 bg-[#111941] text-white flex justify-center items-center z-20"
+      >
+        <p>
+          © 2023
+          <a href="#home" class="underline decoration-0 hover:no-underline"
+            >Ted Martins</a
+          >. All Right Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- GO TO TOP-->
+
+    <a href="#top" class="go-top" aria-label="Go To Top" data-go-top>
+      <img src="./src/img/arrow-up-svgrepo-com.svg" class="w-6" />
+    </a>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
