@@ -24,10 +24,10 @@ This project is designed to showcase a product or service in a clean and visuall
 ## ⚙️ How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/your-repo-name.git
+   git clone https://github.com/991996/Landing-page.git
 
 2. Navigate to the project folder:
-cd your-repo-name
+cd Landing-page
 
 3. Open the index.html file directly in your browser.
 (No installation required for this static project)
